@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="67dp">
+
+
+
+
+    <!-- UltraLink logo -->
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="267dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ultralinklogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:text="@string/welcome_to_ultralink"
+        android:textColor="#3498DB"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--Email -->
+
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="288dp"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/buttons"
+        android:textColorHint="@color/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/email_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="296dp"
+        android:src="@drawable/email_icon"
+        app:layout_constraintEnd_toStartOf="@+id/etEmail"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/info_icon1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="348dp"
+        android:src="@drawable/info_icon"
+        app:layout_constraintEnd_toStartOf="@+id/etSpecialty"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Specialty -->
+
+    <EditText
+        android:id="@+id/etSpecialty"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="340dp"
+        android:hint="@string/enter_your_medical_specialty"
+        android:inputType="text"
+        android:textColor="@color/buttons"
+        android:textColorHint="@color/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/info_icon2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="400dp"
+        android:src="@drawable/info_icon"
+        app:layout_constraintEnd_toStartOf="@+id/etHospital"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Hospital -->
+
+    <EditText
+        android:id="@+id/etHospital"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="392dp"
+        android:hint="@string/enter_your_current_hospital"
+        android:inputType="text"
+        android:textColor="@color/buttons"
+        android:textColorHint="@color/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/info_icon3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="452dp"
+        android:src="@drawable/info_icon"
+        app:layout_constraintEnd_toStartOf="@+id/etYears"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- years Expeirence -->
+    <EditText
+        android:id="@+id/etYears"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="444dp"
+        android:hint="@string/enter_your_years_of_experience"
+        android:inputType="text"
+        android:textColor="@color/buttons"
+        android:textColorHint="@color/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="508dp"
+        android:src="@drawable/user_icon"
+        app:layout_constraintEnd_toStartOf="@+id/etUsername"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- username -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="500dp"
+        android:hint="@string/enter_your_username"
+        android:inputType="text"
+        android:textColor="@color/buttons"
+        android:textColorHint="@color/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/password_icon1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="560dp"
+        android:src="@drawable/password_icon"
+        app:layout_constraintEnd_toStartOf="@+id/etPassword1"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- password -->
+
+    <EditText
+        android:id="@+id/etPassword1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="552dp"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:textColor="@color/buttons"
+        android:textColorHint="@color/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/password_icon2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="616dp"
+        android:src="@drawable/password_icon"
+        app:layout_constraintEnd_toStartOf="@+id/etPassword2"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Confirming password -->
+    <EditText
+        android:id="@+id/etPassword2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="608dp"
+        android:hint="@string/confirm_your_password"
+        android:inputType="textPassword"
+        android:textColor="@color/buttons"
+        android:textColorHint="@color/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+    <!--Register button -->
+
+
+
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:height="60dp"
+        android:backgroundTint="@color/buttons"
+        android:radius="20dp"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

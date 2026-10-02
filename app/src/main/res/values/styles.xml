@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomActiveIndicatorStyle">CustomActiveIndicatorStyle
+
+        <item name="android:color">#3300BCD4</item> <!-- Cor do indicador -->
+
+    </style>
+    <style name="BottomNavTextAppearance" parent="TextAppearance.AppCompat.Small">
+        <item name="android:paddingTop">30dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CustomRangeSlider" parent="Widget.MaterialComponents.Slider">
+        <item name="sliderStyle">@style/CustomSliderStyle</item>
+    </style>
+
+    <style name="CustomSliderStyle" parent="Widget.MaterialComponents.Slider">
+        <item name="tickColorActive">@color/back_green</item>  <!-- Color of active ticks -->
+        <item name="tickColorInactive">@color/back_green</item>  <!-- Color of inactive ticks -->
+    </style>
+</resources>

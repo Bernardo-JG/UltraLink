@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Search_Users"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchUsersActivity"
+    android:background = "@color/bg_color">
+
+    <!-- Header Container -->
+    <FrameLayout
+        android:id="@+id/header_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bars_color"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Search by Text -->
+            <TextView
+                android:id="@+id/searchByText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop = "25dp"
+                android:text="@string/search_by"
+                android:textSize="16sp"
+                android:textStyle = "bold"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- RadioGroup for search options -->
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/searchByText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Radio button for the username -->
+
+                <RadioButton
+                    app:useMaterialThemeColors="false"
+                    android:id="@+id/rbUsername"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/username"
+                    android:button = "@drawable/custom_icon"
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+                    tools:ignore="SmallSp" />
+
+                <!-- Radio button for the hospital -->
+                <RadioButton
+                    android:id="@+id/rbHospital"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize = "8sp"
+                    android:layout_height="wrap_content"
+                    app:useMaterialThemeColors = "false"
+                    android:buttonTint = "@color/white"
+                    android:textColor="@color/white"
+                    android:text="@string/hospital"
+                    android:button = "@drawable/custom_icon"
+                    tools:ignore="SmallSp" />
+                <!-- Radio button for the specialty -->
+                <RadioButton
+                    android:id="@+id/rbSpecialty"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize = "8sp"
+                    android:textColor="@color/white"
+                    app:useMaterialThemeColors = "false"
+                    android:buttonTint = "@color/white"
+                    android:button = "@drawable/custom_icon"
+                    android:layout_height="wrap_content"
+                    android:text="@string/specialty"
+                    tools:ignore="SmallSp" />
+
+                <!-- Radio button for the years of experience -->
+                <RadioButton
+                    android:id="@+id/rbExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:useMaterialThemeColors = "false"
+                    android:buttonTint = "@color/white"
+                    android:textSize = "8sp"
+                    android:button = "@drawable/custom_icon"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min_years_of_experience"
+                    tools:ignore="SmallSp" />
+
+
+            </RadioGroup>
+
+            <!-- Search Input -->
+            <EditText
+                android:id="@+id/etSearchUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHint="@color/hint"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/radioGroup"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <!-- Guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/header_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="160dp"
+        android:orientation="horizontal" />
+
+    <!-- RecyclerView to display the users that match the criteria-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toBottomOf="@id/header_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

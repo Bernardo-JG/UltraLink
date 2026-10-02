@@ -1,0 +1,52 @@
+[versions]
+agp = "8.7.1"
+bcrypt = "0.9.0"
+ccp = "2.5.0"
+firebaseUiFirestore = "8.0.2"
+glideVersion = "4.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+googleGmsGoogleServices = "4.4.2"
+firebaseAuth = "23.1.0"
+firebaseFirestore = "25.1.1"
+runner = "1.6.1"
+firebaseStorage = "21.0.1"
+firebaseMessaging = "24.1.0"
+media3Transformer = "1.5.0"
+mobileFfmpegFull = "4.4"
+ucrop = "2.2.8"
+
+
+[libraries]
+androidx-media3-common = { module = "androidx.media3:media3-common", version.ref = "media3Transformer" }
+androidx-media3-effect = { module = "androidx.media3:media3-effect", version.ref = "media3Transformer" }
+androidx-media3-ui = { module = "androidx.media3:media3-ui", version.ref = "media3Transformer" }
+bcrypt = { module = "at.favre.lib:bcrypt", version.ref = "bcrypt" }
+ccp = { module = "com.hbb20:ccp", version.ref = "ccp" }
+firebase-ui-firestore = { module = "com.firebaseui:firebase-ui-firestore", version.ref = "firebaseUiFirestore" }
+github-glide = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
+firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging", version.ref = "firebaseMessaging" }
+media3-transformer = { module = "androidx.media3:media3-transformer", version.ref = "media3Transformer" }
+mobile-ffmpeg-full = { module = "com.arthenica:mobile-ffmpeg-full", version.ref = "mobileFfmpegFull" }
+ucrop = { module = "com.github.yalantis:ucrop", version.ref = "ucrop" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+

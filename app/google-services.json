@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "345697247629",
+    "firebase_url": "https://ultralink-70ed3-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ultralink-70ed3",
+    "storage_bucket": "ultralink-70ed3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345697247629:android:52c01b59ae7e8e834f9dc4",
+        "android_client_info": {
+          "package_name": "org.feup.apm.cmeb_login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcHkshNvYqBiyyZMC3SDwAI4yzzc9XRt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

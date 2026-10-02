@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/custom_oval_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Border Color and Width -->
+    <stroke
+        android:width="7dp"
+        android:color="#FF0000" />
+
+    <!-- Rounded Corners -->
+    <corners android:radius="300dp" />
+
+    <!-- Transparent Fill -->
+    <solid android:color="@android:color/transparent" />
+</shape>

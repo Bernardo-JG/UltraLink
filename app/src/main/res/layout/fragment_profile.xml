@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+
+    android:gravity="start"
+    android:layout_margin="0dp"
+    android:background="@color/bg_color">
+
+ <!-- setting some space before the elements -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click_to_change_your_profile_picture"
+        android:layout_marginStart="98dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+<!-- pic to click -->
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@drawable/white_circle"
+        android:src="@drawable/profile_iconpic"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/profile_image_view"
+        android:layout_marginStart="116dp" />
+
+<!--Information fields - you can't change the email due to Firebase Authentication -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/buttons"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/username"
+            android:background="@android:color/white"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:elevation="5dp"
+            android:id="@+id/username_profile" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/buttons"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:elevation="5dp"
+            android:enabled="false"
+            android:id="@+id/email_profile" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/years_of_experience"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/buttons"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/years_of_experience"
+            android:background="@android:color/white"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:elevation="5dp"
+            android:id="@+id/yearsExperience" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hospital"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/buttons"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hospital"
+            android:background="@android:color/white"
+            android:textColor="#000000"
+            android:inputType="text"
+
+            android:elevation="5dp"
+            android:id="@+id/hospital" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/specialty"
+            android:textColor="@color/buttons"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/specialty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:elevation="5dp"
+            android:hint="@string/specialty"
+            android:inputType="text"
+            android:textColor="@color/black"
+             />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/update_profile_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttons"
+            android:layout_centerInParent="true"
+            android:text="@string/update_profile"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

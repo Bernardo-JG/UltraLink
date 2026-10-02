@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CMEB_Login" parent="Theme.Material3.DayNight.NoActionBar">
+
+
+        <item name="colorOnSurface">@color/buttons</item>
+        <item name="colorPrimary">@color/buttons</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/buttons</item>
+
+
+    </style>
+
+    <style name="Theme.CMEB_Login" parent="Base.Theme.CMEB_Login" />
+</resources>

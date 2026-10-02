@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".HomeFragment"
+    tools:layout_editor_absoluteX="-3dp"
+    tools:layout_editor_absoluteY="-64dp">
+
+    <!-- Botão Help -->
+
+    <!-- Imagem Help -->
+
+    <!-- Botão Acquire Images -->
+
+    <!-- Imagem Acquire Images -->
+
+    <!-- Botão Settings -->
+
+
+    <Button
+        android:id="@+id/acquire_images"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/main_buttons"
+        android:backgroundTint="@null"
+        android:elevation="1dp"
+        android:paddingTop="50dp"
+        android:text="@string/acquire_images"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/gallery"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/main_buttons"
+        android:backgroundTint="#4CAF50"
+        android:paddingTop="40dp"
+        android:text="@string/gallery"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/main_buttons"
+        android:backgroundTint="#4CAF50"
+        android:paddingTop="40dp"
+        android:text="@string/settings"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gallery" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/main_buttons"
+        android:elevation="1dp"
+        android:paddingTop="40dp"
+        android:text="@string/upload"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/settings"
+        app:layout_constraintStart_toEndOf="@+id/acquire_images" />
+
+    <!-- Imagem Settings -->
+
+    <!-- Botão Logout -->
+
+    <!-- Logo -->
+
+    <ImageView
+        android:id="@+id/settings_photo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="257dp"
+        android:alpha="0.8"
+        android:elevation="1dp"
+        android:src="@drawable/settings"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/settings"
+        app:layout_constraintStart_toStartOf="@+id/settings"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/acquire_photo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="397dp"
+        android:elevation="1dp"
+        android:src="@drawable/ic_upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/upload"
+        app:layout_constraintStart_toStartOf="@+id/upload"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/gallery_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="257dp"
+        android:elevation="1dp"
+        android:src="@drawable/ic_gallery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gallery"
+        app:layout_constraintStart_toStartOf="@+id/gallery"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/bluetooth_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="397dp"
+        android:elevation="1dp"
+        android:src="@drawable/ic_bluetooth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/acquire_images"
+        app:layout_constraintStart_toStartOf="@+id/acquire_images"
+        app:tint="@color/white" />
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="89dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="170dp"
+        android:backgroundTint="#BF1221"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="330dp"
+        android:layout_height="366dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ultralinklogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Divisor -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
